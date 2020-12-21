@@ -12,7 +12,7 @@ const groupReader = (inputfile) => {
     .readFileSync(inputfile, "utf-8")
     .split("\n\n")
     .filter((group) => !!group)
-    .map((group) => group.split("\n"));
+    .map((group) => group.split("\n").filter((line) => !!line));
 };
 
 module.exports = { lineReader, groupReader };
