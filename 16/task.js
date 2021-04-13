@@ -87,4 +87,4 @@ const myDepartureValues = fieldMap
   .map((f) => f.idx)
   .map((idx) => myTicketFields[idx])
   .reduce((acc, mtf) => acc * mtf);
-console.log(myDepartureValues);
+console.table(myDepartureValues);
